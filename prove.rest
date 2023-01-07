@@ -11,3 +11,12 @@ GET http://localhost:8080/contacts/63b8ac3fa77535e7e898a0c5
 
 ###
 GET https://cse341lesson1.onrender.com/contacts
+
+###
+GET https://cse341lesson1.onrender.com/contacts/63b8ac3fa77535e7e898a0c3
+
+###
+GET https://cse341lesson1.onrender.com/contacts/63b8ac3fa77535e7e898a0c4
+
+###
+GET https://cse341lesson1.onrender.com/contacts/63b8ac3fa77535e7e898a0c5
