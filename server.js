@@ -4,7 +4,7 @@ const mongodb = require("./db/mongodb");
 const routes = require("./routes");
 const bodyParser = require('body-parser');
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
 
 app
 .use(bodyParser.json())
