@@ -1,13 +1,13 @@
 
-GET http://localhost:8080/contacts 
+GET http://localhost:3000/contacts 
 ###
-GET http://localhost:8080/contacts/63b8ac3fa77535e7e898a0c3
+GET http://localhost:3000/contacts/63b8ac3fa77535e7e898a0c3
 
 ###
-GET http://localhost:8080/contacts/63b8ac3fa77535e7e898a0c4
+GET http://localhost:3000/contacts/63b8ac3fa77535e7e898a0c4
 
 ###
-GET http://localhost:8080/contacts/63b8ac3fa77535e7e898a0c5
+GET http://localhost:3000/contacts/63b8ac3fa77535e7e898a0c5
 
 ###
 GET https://cse341lesson1.onrender.com/contacts
