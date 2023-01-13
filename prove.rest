@@ -20,3 +20,57 @@ GET https://cse341lesson1.onrender.com/contacts/63b8ac3fa77535e7e898a0c4
 
 ###
 GET https://cse341lesson1.onrender.com/contacts/63b8ac3fa77535e7e898a0c5
+
+### lesson 3
+POST http://localhost:3000/contacts HTTP/1.1
+Content-type: application/json 
+
+{
+"firstName":"Tina",
+"lastName":"Mendez",
+"email":"mendez@myemail.com",
+"favoriteColor":"Red",
+"birthday":"01/01/85"
+}  
+
+###
+PUT http://localhost:3000/contacts/63c19e8d2ea58d83065b6ca4 HTTP/1.1
+Content-type: application/json 
+
+{
+"firstName":"Victor",
+"lastName":"Lopez",
+"email":"amazingwoman@myemail.com",
+"favoriteColor":"Green",
+"birthday":"01/01/22"
+} 
+
+###
+DELETE http://localhost:3000/contacts/63c19e8d2ea58d83065b6ca4
+
+
+###
+POST https://cse341lesson1.onrender.com/contacts HTTP/1.1
+
+{
+"firstName":"Lina",
+"lastName":"Lopez",
+"email":"amazingwoman@myemail.com",
+"favoriteColor":"Blue",
+"birthday":"01/01/22"
+}  
+
+###
+PUT https://cse341lesson1.onrender.com/contacts/63b8ac3fa77535e7e898a0c5 HTTP/1.1
+Content-type: application/json 
+
+{
+"firstName":"Cassandra",
+"lastName":"Anderson",
+"email":"AndersonC@test.com",
+"favoriteColor":"Green",
+"birthday":"02/22/80"
+} 
+
+###
+DELETE http://localhost:3000/contacts/63b8ac3fa77535e7e898a0c5

@@ -26,4 +26,43 @@ const getSingle = async (req, res, next) => {
     });
   };
 
-module.exports = { getAll, getSingle};
+  const createSingle = async (req, res, next) => {
+    const contact = req.body;
+    const createContact = await mongodb
+    .getDb()
+    .db()
+    .collection('contacts')
+    .insertOne(contact).then(result => {
+      res.status(201).json(result);
+    })
+    .catch(error => console.error(error))
+  }
+
+  const updateSingle = async (req, res, next) =>{
+    const userId = new ObjectId(req.params.id);
+    const contact = req.body;
+    const update = await mongodb
+    .getDb()
+    .db()
+    .collection('contacts')
+    .replaceOne({_id: userId}, contact).then(result =>{
+      res.status(204).send();
+    })
+    .catch(error => console.error(error))
+  }
+
+  const deleteSingle = async (req, res, next) =>{
+    const userId = new ObjectId(req.params.id);
+    const contact = req.body;
+    const deleteContact = await mongodb
+    .getDb()
+    .db()
+    .collection('contacts')
+    .deleteOne({_id: userId}).then(result =>{
+      res.status(200).send();
+    })
+    .catch(error => console.error(error))
+  }
+  
+
+module.exports = { getAll, getSingle, createSingle, updateSingle, deleteSingle};
